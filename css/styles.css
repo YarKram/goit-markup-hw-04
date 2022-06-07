@@ -194,8 +194,8 @@ body {
 }
 
 .icon-footer {
-  margin-right: 10px;
-  fill: currentColor;
+	margin-right: 10px;
+	fill: currentColor;
 }
 
 /* hero */
@@ -431,8 +431,6 @@ body {
 	padding-bottom: 60px;
 	padding-left: 15px;
 	margin: 0;
-	/* display: flex; */
-	/* min-width: 1200px; */
 }
 
 .footer a.web-studio {
@@ -460,7 +458,7 @@ body {
 }
 
 .footer-center-info > .icon-list > .icon-general > .social-link:hover {
-	background-color: #2196F3;
+	background-color: #2196f3;
 }
 
 .footer-invitation {
