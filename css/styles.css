@@ -222,6 +222,7 @@ body {
 	background-position: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
+	background-size: cover;
 
 	max-width: 1600px;
 }
@@ -340,6 +341,7 @@ body {
 	border-radius: 0px 0px 4px 4px;
 
 	flex-basis: calc(100% / 3 - 30px);
+	background-color: var(--accent-color-two);
 }
 
 .employee-card {
@@ -389,12 +391,33 @@ body {
 /*  Our clients */
 
 .clients-list {
+  width: 1200px;
 	list-style: none;
 	display: flex;
 	padding: 0 32px;
 	margin: 0;
 	justify-content: center;
+
+	margin-left: auto;
+  margin-right: auto;
+
+	padding-left: 15px;
+	padding-right: 15px;
+
+	flex-wrap: wrap;
 }
+
+.clients-general {
+	flex-basis: calc(100% / 6 - 30px);
+	margin-left: var(--cards-gap);
+	margin-top: var(--cards-gap);
+}
+
+.clients-general:nth-child(6n+1) {
+  margin-left: 0;
+}
+
+
 
 .clients-item {
 	width: 170px;
@@ -407,9 +430,11 @@ body {
 	color: #afb1b8;
 }
 
-.clients-general:not(:last-child) {
+
+/* 
+.clients-general {
 	margin-right: 30px;
-}
+} */
 
 .clients-item:hover {
 	color: #2196f3;
@@ -509,13 +534,25 @@ body {
 	margin-left: var(--cards-gap);
 	margin-top: var(--cards-gap);
 }
-
+/* 
 .filter-cards .item:hover,
 .filter-cards .item:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 	cursor: pointer;
+} */
+
+.item-link {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
+
+.item-link:hover {
+  	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .button-background {
 	color: var(--accent-color-two);
@@ -627,6 +664,7 @@ button {
 	line-height: 2;
 	letter-spacing: 0.06em;
 	margin-top: 0;
+	margin-bottom: 4px;
 }
 
 .portfolio .paragraph {
