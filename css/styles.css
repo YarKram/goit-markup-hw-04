@@ -198,29 +198,6 @@ body {
   fill: currentColor;
 }
 
-
-/* .mail::before {
-	content: "";
-	width: 16px;
-	height: 12px;
-	background-image: url("../images/svg/envelope.svg");
-
-	background-position: center;
-	background-repeat: no-repeat;
-	margin-right: 10px;
-}
-
-.phone::before {
-	content: "";
-	width: 10px;
-	height: 16px;
-	background-image: url("../images/svg/smartphone.svg");
-
-	background-position: center;
-	background-repeat: no-repeat;
-	margin-right: 10px;
-} */
-
 /* hero */
 /* section one */
 
