@@ -43,6 +43,8 @@ img {
 	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 	/* outline: 1px solid tomato; */
 
 	width: 1200px;
@@ -55,14 +57,12 @@ img {
 .web-studio {
 	margin-left: 0;
 	margin-right: 0;
-
-	padding-left: 15px;
 }
 
 .nav-header {
 	display: flex;
 	align-items: center;
-	padding-left: 15px;
+	
 }
 
 .site-nav {
@@ -84,7 +84,7 @@ img {
 	display: flex;
 	margin-left: auto;
 	padding-left: 0;
-	padding-right: 15px;
+	
 }
 
 .contact-nav .item:nth-child(2) {
@@ -250,10 +250,9 @@ body {
 .advantages-list {
 	display: flex;
 	flex-wrap: wrap;
-	padding-left: 15px;
-	padding-right: 15px;
 	margin-left: calc(-1 * var(--cards-gap));
 	margin-top: calc(-1 * var(--cards-gap));
+	padding-left: 0;
 }
 
 .advantages-list .item {
@@ -279,9 +278,6 @@ body {
 .activities-thumb {
 	margin-left: auto;
 	margin-right: auto;
-
-	padding-left: 15px;
-	padding-right: 15px;
 }
 
 .activities {
@@ -345,12 +341,10 @@ body {
 }
 
 .employee-card {
-	padding-left: 15px;
-	padding-right: 15px;
 	display: flex;
 	margin-top: calc(-1 * var(--cards-gap));
-
 	margin-left: calc(-1 * var(--cards-gap));
+	padding-left: 0;
 }
 
 .icon-list {
@@ -393,27 +387,24 @@ body {
 .clients-list {
 	list-style: none;
 	display: flex;
-	margin: 0;
-	justify-content: center;
-
-	margin-left: auto;
-	margin-right: auto;
-
-	gap: 30px 30px;
-
-	padding-left: 15px;
-	padding-right: 15px;
-
 	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+
+	gap: 30px;
+	columns: 6;
 }
 
 .clients-general {
-	flex-basis: calc(100% / 6 - 30px);
+  flex-basis: calc(100% / 6 - 30px);
+    /* /* flex-basis: calc((100% - 30px) * ((6 - 1) / 6)); */
+    /* flex-basis: calc((100% - var(--cards-gap)) * ((6 - 1) / 6)); */
 }
-
+/* 
 .clients-general:nth-child(6n + 1) {
 	margin-left: 0;
-}
+} */
 
 .clients-item {
 	height: 92px;
@@ -425,19 +416,14 @@ body {
 	color: #afb1b8;
 }
 
-/* 
-.clients-general {
-	margin-right: 30px;
-} */
-
 .clients-item:hover {
 	color: #2196f3;
 	border: 1px solid #2196f3;
 }
 
 .clients-icon {
-	width: 106px;
-	height: 60px;
+	/* width: 106px;
+	height: 60px; */
 	fill: currentColor;
 }
 
@@ -681,8 +667,6 @@ button {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-
-	padding-left: 15px;
 }
 
 a:link {
